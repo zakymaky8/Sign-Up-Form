@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="shortcut icon" href="image/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Norse-Bold.otf">
+</head>
+<body>
+    <div class="container">
+        <div class="side-image">
+            <div class="credit">
+                <img src="image/odin-lined.png" alt="Odin-logo" id="logo">
+                <div id="odin">Odin</div>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="intro">
+                <p>This is not a real online service! You know you need something like this in your life
+                     to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <form action="#" method="post" id="form">
+                <h2>Let's do this!</h2>
+                <div class="item1">
+                    <label for="fname">*First Name: </label><br>
+                    <input type="text" name="first-name" id="fname" placeholder="First Name" required>
+                    <span id="comment"></span>
+                </div>
+                <div class="item2">
+                    <label for="lname">*Last Name:</label><br>
+                    <input type="text" name="last-name" id="lname" placeholder="Last Name" required>
+                    <span id="comment"></span>
+                </div>
+                <div class="item3">
+                    <label for="email">*Email: </label><br>
+                    <input type="email" name="email" id="email" placeholder="your Email" required>
+                    <span id="comment"></span>
+                </div>
+                <div class="item4">
+                    <label for="pwd">*Password: </label><br>
+                    <input type="password" name="password" id="pwd" placeholder="Your Password"required>
+                    <span id="comment"></span>
+                </div>
+                <div class="item1">
+                    <label for="confirm">*Confirm Password: </label><br>
+                    <input type="password" name="confirmation-password" id="confirm" placeholder="Confirm Your Password" required>
+                    <span id="comment"></span>
+                </div>
+                <div id="eye"></div>
+                <div id="inner"></div>
+            </form>
+            <span id="failed"></span>
+            <div class="footer">
+                <button id="Create-btn">Create Account</button>
+                <div id="log-in">Already have an account? 
+                    <a href="index.html" target="_blank" rel="home page">Log-in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="validat.js"></script>
+</body>
+</html>
