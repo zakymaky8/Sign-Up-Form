@@ -169,7 +169,7 @@ a:hover {
     transition: font-size 0.5s, background 0.5s;
 }
 /* media query  for mobiles*/
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 500px){
     .footer {
         gap: 50px;
         margin-top: -100px;
