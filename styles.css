@@ -4,6 +4,7 @@
 }
 html {
     font-size: 20px;
+    height: 100%;
 }
 body {
     margin: 0;
@@ -16,17 +17,18 @@ body {
     background-image: url('image/welcoming.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
     color: white;
+    width: 100vw;
+    margin: 0;
 }
 .credit {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 632px;
+    width: 602px;
     height: 630px;
-    background: rgba(53, 6, 194, 0.4);
+    box-sizing: border-box;
 }
 img#logo {
     width: 110px;
@@ -50,7 +52,7 @@ img#logo {
     gap: 40px;
     height: 635px;
     box-sizing: border-box;
-}
+}  
 .intro {
     display: flex;
     flex-direction: column;
@@ -62,7 +64,7 @@ img#logo {
 .intro p:first-of-type {
     margin-bottom: -15px;
 }
-h2 {
+form h2:only-of-type {
     color: rgb(0, 247, 255);
     font-size: 1.5rem;
 }
@@ -99,6 +101,7 @@ input:hover {
 }
 #form input:focus {
     background: rgb(174, 45, 45,0.5);
+    outline: none;
 }
 input::placeholder {
     font-family: Sofia;
@@ -169,22 +172,32 @@ a:hover {
     transition: font-size 0.5s, background 0.5s;
 }
 /* media query  for mobiles*/
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     .footer {
         gap: 50px;
         margin-top: -100px;
     }
     .credit {
-        height: 490px;
+        width: 100vw;
     }
     .intro {
         font-family: serif;
-        margin-bottom: -100px;
+        margin-bottom: -50px;
+        width: fit-content;
     }
     button {
         font-size: 10px;
     }
+    button:hover {
+        font-size: 10px;
+    }
     #log-in {
         font-size: 14px;
+    }
+    .main-section {
+        width: 100%;
+    }
+    .credit {
+        width: 100vw;
     }
 }
